@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Noto Serif', serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background: rgba(241, 228, 228, 0.77);
+}
+
+.TaskListApp {
+  width: 100%;
+  margin: auto;
+  min-height: 100vh;
+  background: #ffa4e4;
+  -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1350px) {
+  .TaskListApp {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .TaskListApp {
+    width: 100%;
+  }
+}
+
+nav {
+  background-color: #53354a;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.3rem;
+}
+
+nav header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+nav header ion-icon {
+  font-size: 5.5rem;
+  padding: 0 1rem;
+}
+
+nav header p {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.newTask {
+  padding: 5rem 2rem 2rem 2rem;
+  margin: 2rem 1rem;
+  background: #ffffff;
+  border: 1px solid #f5f1f1;
+  -webkit-box-shadow: 1px 2px 10px #999;
+          box-shadow: 1px 2px 10px #999;
+  border-radius: 5px;
+  margin-bottom: 3.5rem;
+}
+
+.newTask__input input {
+  width: 100%;
+  border-radius: none;
+  border: none;
+  border-bottom: 1px solid #908888;
+  padding-bottom: 2px;
+  padding-left: 2px;
+}
+
+.newTask__input input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.newTask__input input::-moz-placeholder {
+  color: #999;
+}
+
+.newTask__input input:-ms-input-placeholder {
+  color: #999;
+}
+
+.newTask__input input::-ms-input-placeholder {
+  color: #999;
+}
+
+.newTask__input input::placeholder {
+  color: #999;
+}
+
+.newTask__input input:hover, .newTask__input input:focus, .newTask__input input:active {
+  outline: none;
+}
+
+.newTask__btn {
+  text-align: right;
+  padding-top: 1.5rem;
+}
+
+.newTask__btn button {
+  font-family: 'Noto Serif', serif;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: white;
+  padding: 0.8rem 1.5rem;
+}
+
+.newTask__btn button:last-child {
+  margin-right: 0px;
+}
+
+.newTask__btn button.AddTaskBtn {
+  background-color: #1fab89;
+}
+
+.newTask__btn button.EditTaskBtn {
+  background-color: #7e6bc4;
+}
+
+.newTask__btn button.CancelTaskBtn {
+  background-color: #666;
+}
+
+.newTask__btn button:hover, .newTask__btn button:focus, .newTask__btn button:active {
+  border: none;
+  outline: none;
+}
+
+.task {
+  margin: 1rem;
+  background: #ffffff;
+  -webkit-box-shadow: 1px 2px 10px #999;
+          box-shadow: 1px 2px 10px #999;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 0.7rem;
+  margin-bottom: 1.3rem;
+}
+
+.task__details input {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+       -o-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.task__details label {
+  font-size: 1.7rem;
+  padding-left: 7px;
+  color: #383838;
+}
+
+.task__op {
+  padding-left: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.task__op_edit {
+  padding-right: 1rem;
+  color: #45046a;
+}
+
+.task__op_delete {
+  color: #c70039;
+}
+
+.task__op_edit, .task__op_delete {
+  font-size: 2rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.completed {
+  background: #d1d1d1;
+}
+
+.completed label {
+  text-decoration: line-through;
+}
